@@ -86,7 +86,7 @@ can_i_deploy: .env
 	${PACT_BROKER_COMMAND} can-i-deploy \
 	--pacticipant ${PACTICIPANT} \
 	--version ${VERSION} \
-	--to-environment production
+	--to-environment prod
 
 deploy_app:
 	@echo "\n========== STAGE: deploy 🚀 ==========\n"
@@ -97,7 +97,7 @@ record_deployment: .env
 	record_deployment \
 	--pacticipant ${PACTICIPANT} \
 	--version ${VERSION} \
-	--environment production
+	--environment prod
 
 ## =====================
 ## Multi-platform detection and support
